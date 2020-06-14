@@ -1,15 +1,13 @@
 import React from 'react';
 
 class FirstClass extends React.Component {
-
-    constructor(props) {
-        super(props);
+    onClickHandler = () => {
+        alert("Clicked")
     }
- 
+    
     render() {
-        return (
-            <h1>This is from First Class Code</h1>
-        )
+        let someVar = <h1 style={ { backgroundColor: "blue", color: "white" } } onClick={this.onClickHandler} >This is from First Class Code Data</h1>;
+        return someVar;
     }
 }
 
