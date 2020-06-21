@@ -1,11 +1,9 @@
 import React from 'react';
-// import FirstClass from './react-tutorial/react-components/test1';
-import StylingPart1Comp from "./react-tutorial/Practise1/StylingPart1Comp";
-
+import ParentComponet from './react-tutorial/react-components/ParentComponent';
 function App() {
   return (
     <div>
-      <StylingPart1Comp />
+      <ParentComponet  />
     </div>
   );
 }

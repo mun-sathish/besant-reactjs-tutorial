@@ -1,0 +1,36 @@
+- src
+    - assets
+        - fonts
+        - images
+        - icons
+            - 1.png
+            - 2.png
+            - index.js (import all icons & export them)
+        - index.js (imports & export fonts, images, icons)
+    - components (Eg.. Btn, Input, CustomItems in a List)
+        - Component1.js
+        - Component2.js
+        - component3
+            - _tests_
+                - index.js
+            - index.js
+            - index.css
+        - component4
+            - index.js
+            - index.css
+    - containers (Will be utilzing single/multi components & contains business logics)
+        - Same as Components
+    - utils
+        - generic-util.js -> 10 fns
+        - api-util.js => 5 fns
+        - index.js => 15 fns (generic + api fns)
+    - pages (Optional)
+        LoginPage (it utilizes the containers / components )
+    - screens (Optional => same as page)
+        - LoginScreen
+    - type (Typescript)
+        - ChildComponentType { parentText: String }
+    - configurations
+        - constants.js
+        - index.js (consolidated all the files)
+- index.js (Start of the App)
