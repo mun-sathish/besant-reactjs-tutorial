@@ -1,9 +1,10 @@
 import React from 'react';
-import ParentComponet from './react-tutorial/react-components/ParentComponent';
+import TodoApp from './todo-app';
+
 function App() {
   return (
     <div>
-      <ParentComponet  />
+      <TodoApp  />
     </div>
   );
 }
