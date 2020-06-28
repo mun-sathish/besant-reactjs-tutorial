@@ -3,6 +3,7 @@ import { Checkbox } from 'antd';
 
 export default class ListPendingTodos extends Component {
     render() {
+        // test
         const todos = this.props.todos.filter(item => this.props.isViewOnly ? item.isTaskCompleted === true : item.isTaskCompleted === false);
 
         const PendingList = todos.map(item => {
