@@ -9,9 +9,9 @@ export default class LeftContainer extends Component {
                 <Input.Search
                     placeholder="Add Todo Item"
                     enterButton="ADD"
-                    onSearch={value => console.log(value)}
+                    onSearch={value => value && this.props.addTodo(value)}
                 />
-
+                <br/><br/><br/>
                 <ListPendingTodos todos={this.props.todos} completeTask={this.props.completeTask} />
             </div>
         );
