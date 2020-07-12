@@ -33,4 +33,9 @@
     - configurations
         - constants.js
         - index.js (consolidated all the files)
+    - store
+        - index.js
+        - reducers
+        - middlewares (Optional)
+        - actions
 - index.js (Start of the App)
