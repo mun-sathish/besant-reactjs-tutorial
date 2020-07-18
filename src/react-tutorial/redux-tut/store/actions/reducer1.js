@@ -1,10 +1,11 @@
 export const chgR1Type = (data) => {
     return {
-        type: 'R1-CHANGE-TYPE',
-        payload: data
-    }
-}
+        type: "R1-CHANGE-TYPE",
+        payload: data,
+        apiCall: true,
+    };
+};
 
-export const chgR1EnableData = () => ({ type: 'R1-ENABLE-DATA' });
+export const chgR1EnableData = () => ({ type: "R1-ENABLE-DATA" });
 
-export const chgR1DisableData = () => ({ type: 'R1-DISABLE-DATA' })
+export const chgR1DisableData = () => ({ type: "R1-DISABLE-DATA" });

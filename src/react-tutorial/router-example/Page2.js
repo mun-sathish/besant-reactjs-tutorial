@@ -1,11 +1,10 @@
 import React, { Component } from "react";
-import { MasterContainer } from "../containers";
 
-export default class TodoPage extends Component {
+export default class Page2 extends Component {
     render() {
         return (
             <div>
-                <MasterContainer />;
+                <h1>Page 2 Content</h1>
             </div>
         );
     }
