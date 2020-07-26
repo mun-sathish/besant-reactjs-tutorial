@@ -1,19 +1,14 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
+import useCustomHook from "./customHook";
 import Hooks1 from "./Hooks1";
 import Hooks2 from "./Hooks2";
 
-function c(tag, msg) {
-    console.log(`[HOOKS] [${tag}] Message: ${msg}`);
-}
+// function c(tag, msg) {
+//     console.log(`[HOOKS] [${tag}] Message: ${msg}`);
+// }
 
 export default function ReactHooksComp() {
-    const [showHooks1, setShowHooks1] = useState(true);
-
-    // It will be executed on start of component
-    // It will be executed, on any change of state/props
-    useEffect(() => {
-        c("useEffect", "Executing");
-    });
+    const [showHooks1, setShowHooks1] = useCustomHook(true);
 
     return (
         <div>
@@ -31,13 +26,3 @@ export default function ReactHooksComp() {
         </div>
     );
 }
-
-// function generateArr(data) {
-//     let x = data;
-//     function changeX(newData) {
-//         x = newData;
-//         console.log("X value = " + x);
-//     }
-//     console.log("X value = " + x);
-//     return [x, changeX];
-// }

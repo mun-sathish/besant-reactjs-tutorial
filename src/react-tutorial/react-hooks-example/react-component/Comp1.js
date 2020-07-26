@@ -9,7 +9,10 @@ export default class Comp1 extends Component {
         super(props);
         this.state = {
             sampleData: "defaultData",
+            inputData: undefined,
         };
+
+        this.myRef = React.createRef();
     }
 
     componentDidMount() {
@@ -29,14 +32,20 @@ export default class Comp1 extends Component {
             <div>
                 SampleData: {this.state.sampleData}
                 <br />
+                <input id="hi" ref={this.myRef} />
                 <button
-                    onClick={() =>
-                        this.setState({ sampleData: new Date().getTime() })
-                    }
+                    onClick={() => {
+                        this.setState({
+                            sampleData: new Date().getTime(),
+                            inputData: this.myRef.current.value,
+                        });
+                        // this.myRef.current.focus();
+                    }}
                 >
                     Change Sample Data
                 </button>
                 <button onClick={this.props.changeComponent}>Goto Comp2</button>
+                <p>Input Data: {this.state.inputData}</p>
             </div>
         );
     }

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 
 function c(tag, msg) {
     console.log(`[HOOKS-H1] [${tag}] Message: ${msg}`);
@@ -7,13 +7,15 @@ function c(tag, msg) {
 export default function Hooks1(props) {
     const [sampleData, setSampleData] = useState("defaultData");
     const [sampleData2, setSampleData2] = useState("defaultData2");
+    const inputRef = useRef();
 
     useEffect(() => {
+        inputRef.current.focus();
         c("useEffect", "S1: " + sampleData);
 
-        return () => {
-            c("useEffect-unmount", "S1: " + sampleData);
-        };
+        // return () => {
+        //     c("useEffect-unmount", "S1: " + sampleData);
+        // };
     }, [sampleData]);
 
     useEffect(() => {
@@ -38,6 +40,7 @@ export default function Hooks1(props) {
     return (
         <div>
             SampleData: {sampleData} - {sampleData2}
+            <input ref={inputRef} />
             <br />
             <button onClick={() => setSampleData(new Date().getTime())}>
                 Change Sample Data
