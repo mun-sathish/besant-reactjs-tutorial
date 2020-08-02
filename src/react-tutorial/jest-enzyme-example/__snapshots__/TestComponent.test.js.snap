@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test Comp 1 Test Obj Snapshot 1`] = `
+Object {
+  "payload": "sampleData",
+  "type": "ADD",
+}
+`;
+
+exports[`Test Comp 1 Test Snapshot 1`] = `
+<div>
+  <h1>
+    Test Component 2
+  </h1>
+  <button>
+    Test Btn
+  </button>
+  <p>
+    Prop Text is 
+    Coming from Props
+  </p>
+</div>
+`;
