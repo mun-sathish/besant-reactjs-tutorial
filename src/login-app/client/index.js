@@ -1,9 +1,9 @@
 import React from "react";
 import { HashRouter as Router, Route, Switch } from "react-router-dom";
+import { ROUTE_PATH } from "./configs";
 import DashboardPage from "./pages/DashboardPage";
 import LoginPage from "./pages/LoginPage";
 import RegisterPage from "./pages/RegisterPage";
-import { ROUTE_PATH, STORAGE_IS_LOGGED_IN, STORAGE_USER_DATA } from "./configs";
 
 export default function LoginApp() {
     // localStorage.removeItem(STORAGE_IS_LOGGED_IN);

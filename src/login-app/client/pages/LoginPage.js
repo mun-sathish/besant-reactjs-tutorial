@@ -21,8 +21,8 @@ export default function LoginPage({ history }) {
         if (
             usernameErr.length > 0 ||
             passwordErr.length > 0 ||
-            username.length == 0 ||
-            password.length == 0
+            username.length === 0 ||
+            password.length === 0
         ) {
             return;
         }
