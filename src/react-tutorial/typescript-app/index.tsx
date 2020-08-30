@@ -1,9 +1,20 @@
 import React from "react";
-import main from "./practise/test1";
+import { ClasComponent } from "./ClassComponent";
+import FunctionComponent from "./FunctionComponent";
+import { ISampleReducer } from "./type/interface";
 
 const TypescriptApp = () => {
-    main();
-    return <div>Typescript App</div>
-}
+  let sampleData: ISampleReducer = {
+    data1: undefined,
+    data2: [1, 23],
+  };
+
+  return (
+    <div>
+      <ClasComponent input1={"String"} input2></ClasComponent>
+      <FunctionComponent newData={"string"} oldData={sampleData} />
+    </div>
+  );
+};
 
 export default TypescriptApp;

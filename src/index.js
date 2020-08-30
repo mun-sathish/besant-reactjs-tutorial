@@ -3,12 +3,13 @@ import ReactDOM from "react-dom";
 import "./index.css";
 // import App from "./App";
 // import ClientApp from "./login-app/client";
-import TSApp from "./react-tutorial/typescript-app";
+// import TSApp from "./react-tutorial/typescript-app";
 // import BankApp from "./bank-app-final-project";
 import * as serviceWorker from "./serviceWorker";
 import "antd/dist/antd.css";
+import TypescriptApp from "./react-tutorial/typescript-app";
 
-ReactDOM.render(<TSApp />, document.getElementById("root"));
+ReactDOM.render(<TypescriptApp />, document.getElementById("root"));
 
 // setTimeout(() => {
 //     ReactDOM.unmountComponentAtNode(document.getElementById('root'));
